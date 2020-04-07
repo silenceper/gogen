@@ -1,0 +1,2 @@
+# gogen
+Generate everything
