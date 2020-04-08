@@ -34,21 +34,21 @@ type tableInfo struct {
 }
 
 var typeMap = [][]string{
-	{"tinyint", "byte", "db.NullInt64"},
-	{"smallint", "int32", "db.NullInt64"},
-	{"int", "int32", "db.NullInt64"},
-	{"bigint", "int64", "db.NullInt64"},
-	{"varchar", "string", "db.NullString"},
-	{"char", "string", "db.NullString"},
-	{"text", "string", "db.NullString"},
-	{"tinytext", "string", "db.NullString"},
-	{"datetime", "time.Time", "db.NullTime"},
-	{"date", "time.Time", "db.NullTime"},
-	{"timestamp", "time.Time", "db.NullTime"},
-	{"time", "time.Time", "db.NullTime"},
-	{"decimal", "float64", "db.NullFloat64"},
-	{"enum", "string", "db.NullString"},
-	{"bit", "db.Bit", "db.NullBit"},
+	{"tinyint", "byte", "orm.NullInt64"},
+	{"smallint", "int32", "orm.NullInt64"},
+	{"int", "int32", "orm.NullInt64"},
+	{"bigint", "int64", "orm.NullInt64"},
+	{"varchar", "string", "orm.NullString"},
+	{"char", "string", "orm.NullString"},
+	{"text", "string", "orm.NullString"},
+	{"tinytext", "string", "orm.NullString"},
+	{"datetime", "time.Time", "orm.NullTime"},
+	{"date", "time.Time", "orm.NullTime"},
+	{"timestamp", "time.Time", "orm.NullTime"},
+	{"time", "time.Time", "orm.NullTime"},
+	{"decimal", "float64", "orm.NullFloat64"},
+	{"enum", "string", "orm.NullString"},
+	{"bit", "db.Bit", "orm.NullBit"},
 }
 
 // ColumnInfo table column info
