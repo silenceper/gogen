@@ -2,21 +2,11 @@
 #
 # 配置生成orm，支持多个db中的多个table
 #
-- database: touzzhijia
-  pkg: touzhijia
+- database: test
+  pkg: test
   dataSource: root:123@tcp(127.0.0.1:3306)/test?parseTime=true&loc=Local
   table:  #需要生成的表名
-    - name: test_table
-      prefix: test_
-    - name: tzj_user
-      prefix: tzj_
-
-
-# go_svn的情况
-- database:   # 如果为空，则inject name为空，适合go_svn的情况
-  isSvn: true
-  pkg: touzhijia
-  dataSource: root:tzj@tcp(10.255.8.39:3306)/touzhijia?parseTime=true&loc=Local
-  table:  #需要生成的表名
-    - name: tzj_other_login
-      prefix: tzj_
+    - name: t_table
+      prefix: t_
+    - name: t_user
+      prefix: t_
